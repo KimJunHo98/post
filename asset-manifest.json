@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/twit/static/css/main.b2800639.css",
+    "main.js": "/twit/static/js/main.b408c2a2.js",
+    "index.html": "/twit/index.html",
+    "main.b2800639.css.map": "/twit/static/css/main.b2800639.css.map",
+    "main.b408c2a2.js.map": "/twit/static/js/main.b408c2a2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2800639.css",
+    "static/js/main.b408c2a2.js"
+  ]
+}
