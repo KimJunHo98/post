@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#footer {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .ft_copy {
+    font-size: 1.4rem;
+}

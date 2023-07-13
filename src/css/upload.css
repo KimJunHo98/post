@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+/* home 컴포넌트 */
+#upload {
+    width: 100%;
+    height: 100%;
+}
+
+.upload {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+/* uploadform 컴포넌트 */
+.upload .upload_form,
+.upload .upload_form form {
+    width: 100%;
+    height: 100%;
+}
+
+.upload .upload_form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.upload .upload_form form .upload_input {
+    position: relative;
+}
+
+.upload .upload_form form .upload_input .texting_input {
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+    border: 1px solid #675481;
+    border-radius: 10px;
+}
+.upload .upload_form form .upload_input .texting_input::placeholder {
+    font-size: 1.4rem;
+    color: #999;
+}
+
+.upload .upload_form form .upload_input .upload_btn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0 none;
+    border-radius: 10px;
+    background-color: #675481;
+    color: #fff;
+    cursor: pointer;
+}
+
+.upload .upload_form form .add_files {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.upload .upload_form form .add_files > label span {
+    width: 100%;
+    padding-right: 6px;
+    font-size: 1.4rem;
+    color: #675481;
+} 
+
+.upload .upload_form form .add_files > label .svg-inline--fa.fa-plus  {
+    font-size: 1.4rem;
+    color: #675481;
+} 
+
+.upload .upload_form form .add_files > input {
+    display: none;
+}
+
+.upload .upload_form form .upload_img_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.upload .upload_form form .upload_img_box .upload_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.upload .upload_form form .upload_img_box .delete_img_btn {
+    margin-top: 5px;
+    font-size: 1.4rem;
+    color: #675481;
+    background-color: #fff;
+}
+.upload .upload_form form .upload_img_box .delete_img_btn .svg-inline--fa.fa-trash {
+    padding-left: 5px;
+}
+
+/* upload 컴포넌트 */
+.upload .upload_post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.upload .upload_post .user_posts {
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.upload .upload_post .user_posts .line {
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+    background-color: #ccc;
+}
+
+.upload .upload_post .user_posts .user_post_box,
+.upload .upload_post .user_posts .edit_post_box {
+    width: 100%;
+    height: 100%;
+    padding: 40px 0 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px 2px rgba(0,0,0,.1);
+}
+
+.upload .upload_post .user_posts .user_post_box .post_img_box,
+.upload .upload_post .user_posts .edit_post_box .post_img_box {
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.upload .upload_post .user_posts .user_post_box .post_img_box .user_post_img,
+.upload .upload_post .user_posts .edit_post_box .post_img_box .user_post_img {
+    border-radius: 10px;
+}
+
+.upload .upload_post .user_posts .user_post_box .user_post_text {
+    width: 100%;
+    max-width: 380px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: wrap;
+    word-break: break-all;
+    font-size: 1.4rem;
+}
+
+.upload .upload_post .user_posts .user_post_box .uplaod_date {
+    position: absolute;
+    top: 12px;
+    left: 30px;
+}
+
+.upload .upload_post .user_posts .dots_box {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.upload .upload_post .user_posts .dots_box .dots {
+    width: 3px;
+    height: 3px;
+    display: inline-block;
+    margin-left: 15px;
+    position: relative;
+    border-radius: 3px;
+    background-color: #675481;
+}
+
+.upload .upload_post .user_posts .dots_box .dots::after,
+.upload .upload_post .user_posts .dots_box .dots::before {
+    content: "";
+    width: 3px;
+    height: 3px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    border-radius: 3px;
+    background-color: #675481;
+}
+
+.upload .upload_post .user_posts .dots_box .dots::after {
+    left: 6px;
+}
+
+.upload .upload_post .user_posts .dots_box .dots::before {
+    right: 6px;
+}
+
+.upload .upload_post .user_posts .post_togglebtn_box {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+.upload .upload_post .user_posts .post_togglebtn_box .show_btn {
+    display: block;
+    margin-right: 5px;
+}
+
+.upload .upload_post .user_posts .post_togglebtn_box .hide_btn {
+    display: none;
+}
+
+.upload .upload_post .user_posts .post_togglebtn_box .toggle_btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.upload .upload_post .user_posts .post_togglebtn_box .toggle_btns .toggle_btn {
+    padding: 2px 6px;
+    margin-top: -1px;
+    border: 1px solid #999;
+    border-radius: 2px;
+    color: #999;
+    background-color: #fff;
+}
+
+.upload .upload_post .user_posts .edit_post_box {
+    width: 100%;
+    position: relative;
+}
+
+.upload .upload_post .user_posts .edit_post_box .edit_inputbox {
+    padding: 10px 30px;
+}
+
+.upload .upload_post .user_posts .edit_post_box .edit_inputbox .edit_post_input {
+    width: 100%;
+    height: 100%;
+    max-width: 380px;
+    border: 0 none;
+}
+
+.upload .upload_post .user_posts .edit_post_box .edit_inputbox > label,
+.upload .upload_post .user_posts .edit_post_box .cancle_btn {
+    position: absolute;
+    top: 10px;
+}
+
+.upload .upload_post .user_posts .edit_post_box .edit_inputbox .edit_btn {
+    display: none;
+}
+
+.upload .upload_post .user_posts .edit_post_box .edit_inputbox > label {
+    width: 30px;
+    height: 30px;
+    right: 15px;
+    font-size: 1.4rem;
+    color: #675481;
+}
+
+.upload .upload_post .user_posts .edit_post_box .cancle_btn {
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 50px;
+    background-color: #fff;
+}
+
+.upload .upload_post .user_posts .edit_post_box .cancle_btn .svg-inline--fa.fa-xmark {
+    font-size: 2rem;
+    color: #675481;
+}
+
