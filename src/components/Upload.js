@@ -94,6 +94,7 @@ const Upload = ({uploadObj, isUser}) => {
                 </>
                 ) : (
                 <div className="user_posts">
+                    <span className="line top"></span>
                     <div className="user_post_box">
                         {uploadObj.uploadedFileUrl && (
                             <>

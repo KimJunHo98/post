@@ -114,6 +114,16 @@
     position: relative;
 }
 
+.upload .upload_post .user_posts .line.top {
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #ccc;
+}
+
 .upload .upload_post .user_posts .line {
     width: 100%;
     height: 1px;

@@ -36,7 +36,7 @@ const Home = ({useObj}) => {
                                 </div>
                                 <div className="upload_post">
                                     {uploads.map(upload => (
-                                        <Upload key={upload.id} uploadObj={upload} isUser={upload.createdId === useObj.uid} useObj={useObj} />
+                                        <Upload key={upload.id} uploadObj={upload} isUser={upload.createdId === useObj.uid} />
                                     ))}
                                 </div>
                             </div>
