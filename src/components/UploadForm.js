@@ -16,8 +16,8 @@ const UploadForm = ({useObj}) => {
     }
     
     const onFileChange = (e) => {
-        const {target: 
-            {
+        const {
+            target: {
                 files
             },
         } = e;
@@ -27,8 +27,8 @@ const UploadForm = ({useObj}) => {
 
         reader.readAsDataURL(theFile);
         reader.onloadend = (finishedEvent) => {
-            const {currentTarget: 
-                {
+            const {
+                currentTarget: {
                     result
                 },
             } = finishedEvent;

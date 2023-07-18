@@ -55,7 +55,7 @@ const Upload = ({uploadObj, isUser}) => {
         setEditing(false);
     }
 
-    const onChage = (e) => {
+    const onChange = (e) => {
         setNewUpload(e.target.value);
     }
 
@@ -81,7 +81,7 @@ const Upload = ({uploadObj, isUser}) => {
                                             </>
                                         )}
                                         <div className="edit_inputbox">
-                                            <input className="edit_post_input" type="text" placeholder="게시물을 수정하세요" required value={newUpload} onChange={onChage} wrap="hard"/>
+                                            <textarea className="edit_post_textbox" name="text" placeholder="게시물을 수정하세요" required value={newUpload} onChange={onChange} wrap="hard" autoFocus="autoFocus" />
                                             <label htmlFor="edit_btn"><FontAwesomeIcon icon={faPen} /></label>
                                             <input id="edit_btn" className="edit_btn" type="submit" value="수정" />
                                         </div>
