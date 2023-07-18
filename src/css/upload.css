@@ -156,9 +156,9 @@
     max-width: 380px;
     height: 100%;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 20px 0;
     overflow: hidden;
-    white-space: wrap;
+    white-space: pre-wrap;
     word-break: break-all;
     font-size: 1.4rem;
 }
