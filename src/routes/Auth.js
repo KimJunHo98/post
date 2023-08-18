@@ -1,5 +1,5 @@
 import React from "react";
-import useAuth from "./useAuth"; // custom hook
+import useAuth from "../hooks/useAuth"; // custom hook
 
 const Auth = () => {
     const { email, password, error, handleSignup, handleLogin, onChange } = useAuth();
