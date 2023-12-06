@@ -4,6 +4,8 @@
 @import "./header";
 @import "./profile";
 @import "./upload";
-@import "./footer";
 @import "./auth";
+@import "./signup";
+@import "./login";
+@import "./footer";
 

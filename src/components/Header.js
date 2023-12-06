@@ -11,7 +11,7 @@ const Header = () => {
             <header id="header">
                 <div className="container">
                     <div className="inner">
-                        <h2 className="ir_so">헤더</h2>
+                        <h1 className="ir_so">헤더</h1>
                         <div className="header">
                             <nav className="nav">
                                 <ul className="link_list">
@@ -21,10 +21,10 @@ const Header = () => {
                                         </Link>
                                     </li>
                                     <li className="header_link">
-                                        <Link to={"/"} className="logo">Post</Link>
+                                        <Link to={"/"} className="logo">Twit</Link>
                                     </li>
                                     <li className="header_link">
-                                        <Link to={"/Profile"} className="my_profile">
+                                        <Link to={"/profile"} className="my_profile">
                                             <FontAwesomeIcon icon={faUser} />
                                         </Link>
                                     </li>

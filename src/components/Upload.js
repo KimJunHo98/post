@@ -5,8 +5,10 @@ import { ref, deleteObject } from "firebase/storage";
 
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen, faXmark } from "@fortawesome/free-solid-svg-icons";
+
 dayjs.extend(relativeTime);
 
 const Upload = ({uploadObj, isUser}) => {
@@ -109,7 +111,7 @@ const Upload = ({uploadObj, isUser}) => {
                     </div>
                     {isUser && (
                         <>
-                            <div className="dots_box" value={isOn} onClick={onTogglebtnClick}>
+                            <div className={`dots_box ${isOn ? "show" : ""}`} value={isOn} onClick={onTogglebtnClick}>
                                 <span className="dots"></span>
                             </div>
                             <div className="post_togglebtn_box">

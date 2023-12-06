@@ -153,10 +153,10 @@
 
 .upload .upload_post .user_posts .user_post_box .user_post_text {
     width: 100%;
-    max-width: 380px;
+    max-width: 600px;
     height: 100%;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px;
     overflow: hidden;
     white-space: pre-wrap;
     word-break: break-all;
@@ -170,19 +170,28 @@
 }
 
 .upload .upload_post .user_posts .dots_box {
-    width: 40px;
+    width: 30px;
     height: 30px;
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 20px;
+    border-radius: 5px;
+    transition: all .2s;
+}
+
+.upload .upload_post .user_posts .dots_box:hover,
+.upload .upload_post .user_posts .dots_box.show {
+    box-shadow: 0 0 2px rgba(0, 0, 0, .3);
 }
 
 .upload .upload_post .user_posts .dots_box .dots {
     width: 3px;
     height: 3px;
     display: inline-block;
-    margin-left: 15px;
     position: relative;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 3px;
     background-color: #675481;
 }
@@ -209,8 +218,8 @@
 
 .upload .upload_post .user_posts .post_togglebtn_box {
     position: absolute;
-    top: 30px;
-    right: 20px;
+    top: 41px;
+    right: 10px;
 }
 
 .upload .upload_post .user_posts .post_togglebtn_box .show_btn {
