@@ -6,7 +6,6 @@ import Home from "../routes/Home";
 import Profile from "../routes/Profile";
 import SignUp from "../routes/SignUp";
 import LogIn from "../routes/LogIn";
-// import Auth from "./Auth";
 
 const RouterApp = ({ isLogIn, useObj }) => {
     console.log(isLogIn);
