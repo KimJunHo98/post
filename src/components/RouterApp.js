@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import Home from "../routes/Home";
@@ -9,23 +9,23 @@ import LogIn from "../routes/LogIn";
 
 const RouterApp = ({ isLogIn, useObj }) => {
     return (
-        <Router>
+        <HashRouter>
             {isLogIn && <Header useObj={useObj} />}
             <Routes>
-                {isLogIn ? (
+                {!isLogIn ? (
+                    <>
+                        <Route path="/" element={<SignUp />} />
+                        <Route path="/login" element={<LogIn />} />
+                    </>
+                ) : (
                     <>
                         <Route path="/" element={<Home useObj={useObj} />} />
                         <Route path="/profile" element={<Profile useObj={useObj} />} />
                     </>
-                ) : (
-                    <>
-                        <Route path="/signup" element={<SignUp />} />
-                        <Route path="/login" element={<LogIn />} />
-                    </>
                 )}
             </Routes>
             <Footer />
-        </Router>
+        </HashRouter>
     );
 };
 

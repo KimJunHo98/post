@@ -37,7 +37,7 @@ const LogIn = () => {
                                     <button className="login_btn" type="submit" onClick={handleLogin}>
                                         <span className="login">로그인</span>
                                     </button>
-                                    <Link to={"/signup"} className="signup_btn">
+                                    <Link to={"/"} className="signup_btn">
                                         계정이 없으신가요? <span className="move_signup">회원가입 하기</span>
                                     </Link>
                                 </div>

@@ -30,7 +30,7 @@ const App = () => {
     }, []);
     console.log(init);
 
-    return <div id="wrap">{init ? <RouterApp isLogIn={Boolean(useObj)} useObj={useObj} /> : "잠시만 기다려주세요..."}</div>;
+    return <div id="wrap">{init ? <RouterApp isLogIn={Boolean(useObj)} useObj={useObj} /> : <p>잠시만 기다려주세요...</p>}</div>;
 };
 
 export default App;

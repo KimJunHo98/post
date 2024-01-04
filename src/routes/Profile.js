@@ -12,7 +12,7 @@ const Profile = ({ useObj }) => {
     const navigate = useNavigate();
 
     const onLogOutClick = () => {
-        authService.signOut().then(() => navigate("/signup"));
+        authService.signOut().then(() => navigate("/"));
     };
 
     useEffect(() => {
