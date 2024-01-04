@@ -12,7 +12,7 @@ const LogIn = () => {
                     <h2 className="ir_so">회원가입 및 로그인</h2>
                     <div className="login">
                         <h3 className="twit">Twit</h3>
-                        <div class="login_form">
+                        <div className="login_form">
                             <form onSubmit={onSubmit}>
                                 <input
                                     className="login_input"

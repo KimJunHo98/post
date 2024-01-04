@@ -9,7 +9,7 @@ import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
 
 const Profile = ({ useObj }) => {
     const [randomName, setRandomName] = useState("");
-    const navigate = useNavigate("");
+    const navigate = useNavigate();
 
     const onLogOutClick = () => {
         authService.signOut().then(() => navigate("/signup"));

@@ -8,7 +8,6 @@ import SignUp from "../routes/SignUp";
 import LogIn from "../routes/LogIn";
 
 const RouterApp = ({ isLogIn, useObj }) => {
-    console.log(isLogIn);
     return (
         <Router>
             {isLogIn && <Header useObj={useObj} />}
