@@ -5,7 +5,7 @@ import Upload from "../components/Upload";
 import UploadForm from "../components/UploadForm";
 
 const Home = ({ useObj }) => {
-    const [uploads, setUploads] = useState([]);
+    const [uploads, setUploads] = useState("");
 
     useEffect(() => {
         const q = query(dbCollection(dbService, "upload"), orderBy("createdAt", "desc"));
