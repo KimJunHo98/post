@@ -255,7 +255,7 @@
 .upload .upload_post .user_posts .edit_post_box .edit_inputbox .edit_post_textbox {
     width: 100%;
     height: 100%;
-    max-width: 380px;
+    min-width: 380px;
     min-height: 300px;
     padding: 10px;
     resize: none;
